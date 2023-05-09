@@ -1,0 +1,41 @@
+/* checking that file link or not */
+
+/* body{
+    background-color: black;
+} */
+
+/*  1. Universal Selector */
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* 2. Element selector */
+
+h1{
+    color:blueviolet;
+}
+
+/* 3. Class Selector */
+
+.pra{
+    color:aqua;
+}
+.hello{
+    font-size: 50px;
+}
+
+/* 4. ID selector */
+
+#id1{
+    color:black;
+}
+
+/* 5. selector list */
+
+.class2 , .class5 , .class8{
+    color : goldenrod
+}
+

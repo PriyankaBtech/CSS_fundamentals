@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo Classes(:) </title>
+    <style>
+         /* Hover */
+         .button:hover {
+            color : blueviolet;
+            background-color : blue           
+        }
+        /* focus */
+        input:focus {
+            background-color: brown;
+            color : green
+        }
+        /* link */
+        a:active {
+            color :greenyellow;
+        }
+        /* visited */
+        a:visited {
+            color : red;
+        }
+        /* first child */
+        article p:first-child{
+            color : orangered;
+            border : 2px solid black
+        }
+        /* nth-child */
+        a:nth-child(){
+            background-color: aquamarine;
+            color:blue
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pseduo Classes add more features/style in specific area/content -->
+    <!--  Types of Pseduo Classes are Hover, Focus, Link, Visited, Active, First-Child, Lang, nth-child etc. -->
+    <!-- pseudo-class is a keyword added with selector -->
+
+    <button class="button">SUBMIT</button>
+
+    <input type="text"/>
+
+    <a href="https://www.duolingo.com/learn">Duolingo</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, veritatis? Assumenda esse deleniti quae aliquid eligendi odio expedita, illo eius et maiores autem itaque soluta impedit. Fugiat eius voluptas cumque.</p>
+
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cum eius, deleniti dolore doloribus deserunt illum natus sint mollitia vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nam unde magni, quod maxime eaque!</p>
+    </article>
+
+   <nav>
+    <a href="">Document 1</a>
+    <a href="">Document 2</a>
+    <a href="">Document 3</a>
+    </nav>
+    
+</body>
+</html>

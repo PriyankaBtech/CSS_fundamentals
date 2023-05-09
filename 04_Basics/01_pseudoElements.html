@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo Element(::)</title>
+
+    <style>
+        /* first-line */
+        p::first-line{
+            color: blueviolet;
+        }
+        /* first letter */
+        h2::first-letter{
+            color: brown;
+        
+        }
+        /* after */
+        h2::after{
+            content : " Kaushal";
+        }
+        /* before */
+        h2::before{
+            content : "Miss ";
+        }
+        /* selection */
+        p::selection{
+            background-color: black;
+            color: yellow;
+        }
+        /* combine pseduo class and element */
+        article   p:first-child::first-line {
+            font-size: 120%;
+            font-weight: bold;
+            background-color: blanchedalmond;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- Pseduo Classes add more features/style in specific part of html elemet -->
+     <!-- Types of Pseduo Classes are first-line, first-letter, after, before, maker, selection -->
+     <!-- pseudo-Element is a keyword added with selector -->
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cupiditate reprehenderit perspiciatis quasi facere alias saepe cum voluptas consequuntur modi. Doloremque labore inventore ut dignissimos quae laborum, necessitatibus earum amet cumque, provident officiis in eaque a illo. Est, tempora consequatur sint quo accusamus fuga soluta expedita dicta earum corrupti id!</p>
+
+     <h2>Priyanka</h2>
+
+     <!-- Combine pseduo classe and pseduo element -->
+
+     <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae exercitationem, alias provident architecto ipsum labore eveniet odit cupiditate minima vitae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem ab quae. Eius voluptas debitis culpa alias, deserunt delectus aperiam dolores officiis voluptate dolor non.</p>
+     </article>
+
+    
+
+
+    
+</body>
+</html>

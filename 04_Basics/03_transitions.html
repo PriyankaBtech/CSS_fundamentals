@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition || Tooltip</title>
+    <!-- Transition allow you to change property values smoothly over a given duration -->
+</head>
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+        background-image: linear-gradient(pink, blue);
+        transition: width 2s, height 3s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s;
+    }
+    div:hover {
+        width : 400px;
+        height: 400px;
+    }
+</style>
+<body>
+    <!-- Transition -->
+    <div></div>
+
+    <!-- Tooltip -->
+    <h2 title="Name">Priyanka</h2>
+    
+</body>
+</html>

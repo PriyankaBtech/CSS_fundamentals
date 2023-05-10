@@ -1,0 +1,62 @@
+/* MEDIA QUERY IN DIFFERENT SIZE SCREENS */
+
+body {
+    background-color: green;
+    color: black;
+}
+div {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width : 600px) {
+    body {
+        background-color: pink;
+    }
+    div::after {
+        content : "This size for small-mobiles"
+    }
+}
+
+/* Small devices (portrait tablet and large phones, 600px and up) */
+@media (min-width : 600px) {
+    body {
+        background-color: blue;
+    }
+    div::after {
+        content : "This size for large phones and tablets"
+    }
+}
+
+/* Medium devices (landascape tablets, 768px and up) */
+@media (min-width : 768px) {
+    body {
+        background-color: yellow;
+    }
+    div::after {
+        content : "This size for large tablets"
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width : 992px) {
+    body {
+        background-color: violet;
+    }
+    div::after {
+        content : "This size for laptops and desktops"
+    }
+}
+
+/* Extra large devices (large laptops, tv and desktops 1200px and up) */
+@media (min-width : 1200px) {
+    body {
+        background-color: orange;
+    }
+    div::after {
+        content : "This size for large devices"
+    }
+}

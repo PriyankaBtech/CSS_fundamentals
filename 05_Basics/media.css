@@ -1,0 +1,59 @@
+/* 
+  MEDIA QUERY : syntax
+  @media media_target, media_feature and (media_feature : value) {
+    // styles
+  }
+*/
+body {
+    background-color: black;
+    color: azure;
+}
+
+div {
+    font-size : x-large;
+    text-align : center;
+}
+
+div::after {
+    content : "let's start learning Media Query";
+}
+@media (max-width: 300px) {
+    /* if viewport is atleast 300px and lower
+    then 300px this style will apply */
+    body {
+        background-color: blue;
+    }
+    div::after {
+        content : "yes, blue is working"
+    }
+}
+@media (min-width : 300px) and (max-width : 700px) {
+    body {
+        background-color: blueviolet;
+    }
+    div::after {
+        content : "yes, violet is working"
+    }
+}
+
+@media (min-width: 700px) {
+    /* if viewport is atleast 700px
+    then this style will apply */
+    body {
+        background-color: yellow;
+    }
+    div::after {
+        content : "yes, yellow is working"
+    }
+}
+
+@media (min-width: 900px) {
+    /* if viewport is atleast 900px
+    then this style will apply */
+    body {
+        background-color: green;
+    }
+    div::after {
+        content : "yes, Its working"
+    }
+}

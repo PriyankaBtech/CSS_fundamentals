@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox || part-2</title>
+    <!-- work on flex items -->
+</head>
+<style>
+    .bigBox {
+        display: flex;
+        height: 300px;
+        /* all element align horizontally */
+        border: 2px solid black;
+        justify-content: center;
+    }
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+    .box1 {
+        background-color: darkblue;
+        /* order: 3; */
+        flex-grow: 5;
+        /* flex: 2 0 100px; */
+    }
+    .box2 {
+        background-color: purple;
+        flex-grow: 10;
+        align-self: center;        
+    }
+    .box3 {
+        background-color: darkgreen;
+        flex-grow: 20;
+        /* flex-shrink: 2; */
+    }
+</style>
+<body>
+    <!-- flexbox  -->
+    <!-- before start working on flexbox must create its parent -->
+
+    <!-- parent -->
+    <div class="bigBox">
+        <!-- child -->
+    <div class="box box1">BOX1</div>
+    <div class="box box2">BOX2</div>
+    <div class="box box3">BOX3</div>
+    </div>    
+</body>
+</html>

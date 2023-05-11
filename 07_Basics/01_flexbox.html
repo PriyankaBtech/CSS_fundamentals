@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox || part-1</title>
+    <!-- flexbox is part of css layout, its control the single dimension layout -->
+    </head>
+<style>
+    /* work on flex container */
+    .bigBox {
+        display: flex;
+        /* all element align horizontally */
+        border: 2px solid black;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        /* flex-flow: start wrap; */
+        justify-content: center;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        /* align-item works top to bottom */
+        height: 500px;
+        gap: 10px;
+        /* align-content: center */
+    }
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+    .box1 {
+        background-color: darkblue;
+    }
+    .box2 {
+        background-color: purple;
+    }
+    .box3 {
+        background-color: darkgreen;
+    }
+</style>
+<body>
+    <!-- flexbox  -->
+    <!-- before start working on flexbox must create its parent -->
+
+    <!-- parent -->
+    <div class="bigBox">
+        <!-- child -->
+    <div class="box box1">BOX1</div>
+    <div class="box box2">BOX2</div>
+    <div class="box box3">BOX3</div>
+    </div>
+    
+
+    
+</body>
+</html>

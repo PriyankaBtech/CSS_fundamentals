@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow || Z-index</title>
+</head>
+<style>
+    /* Overflow */
+    p {
+        height: 250px;
+        width: 250px;
+        background-color: yellow;
+        border: 2px solid black;
+        overflow: scroll;
+        /* overflow: hidden; */
+        /* overflow: visible; */
+        /* overflow: auto; */
+    }
+
+    /* z-index */
+    .one {
+        height: 150px;
+        width: 150px;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .two {
+        height: 150px;
+        width: 150px;
+        background-color: purple;
+        position: absolute;
+    }
+</style>
+<body>
+    <!-- overflow -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam iusto quasi inventore nam labore placeat at expedita dignissimos exercitationem, laudantium libero perferendis fugiat, dolor facilis sed vel nihil, fuga optio aliquam nostrum eligendi. Atque iste neque eveniet voluptatum laudantium incidunt autem sunt voluptatibus dolores asperiores illo architecto, voluptate ratione odio voluptates placeat animi minus sequi? Ad in, voluptates dolores hic adipisci itaque ab illo quasi nobis temporibus dolore sunt quas eaque dignissimos! Blanditiis unde odio, inventore architecto earum amet sint libero debitis iure nostrum neque enim modi! Repudiandae deserunt praesentium fugit in tenetur. Deleniti similique sint amet nihil, optio officia velit esse ab, est vel delectus atque aliquid quos, eum facere dolore quaerat iste error odit provident quisquam facilis fuga. Temporibus libero, consequuntur et voluptatum eaque, nulla perferendis perspiciatis repudiandae blanditiis dolorum, culpa odio? A doloribus adipisci, eius ab autem, saepe, dolore quam laudantium molestias atque doloremque eos corrupti eveniet.</p>
+
+    <!-- z-index -->
+    <!-- z-index works as stack, its only works if two element in same position -->
+    <div class="one"></div>
+    <div class="two"></div>
+    
+</body>
+</html>

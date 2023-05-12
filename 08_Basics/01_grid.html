@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+     <!-- Grid is part of css layout, its control the two dimension layout -->
+     <!-- Its allow for creating responsive layout that can adapt to different screen sizes and devices -->
+</head>
+<style>
+    .container {
+        display: grid;
+        /* default-no change */
+        grid-template-columns: repeat(3, 1fr);
+        /* define no. of item in column */
+        /* minmax() */
+        grid-template-rows: 500px 100px 100px;
+        grid-area: auto;
+        /* justify-item: centre */
+        /* align-item: centre */
+    }
+    .box {
+        /* height: 150px;
+        width: 150px; */
+        margin: 10px;
+    }
+    .box1 {
+        background-color: blueviolet;
+    }
+    .box2 {
+        background-color: darkgreen;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .box3 {
+        background-color: darkorange;
+    }
+</style>
+<body>
+    <!-- Grid -->
+
+    <!-- parent -->
+    <div class="container">
+        <!-- child -->
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>    
+</body>
+</html>
